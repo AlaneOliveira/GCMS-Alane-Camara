@@ -35,4 +35,10 @@ public class HomeController {
         return "Olá, Main!!";
     }
 
+    @RequestMapping("/hotfix")
+    public @ResponseBody String greetinghotfix() {
+        return "Olá Hotfix!";
+
+    }
+
 }
