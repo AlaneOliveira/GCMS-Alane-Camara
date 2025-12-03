@@ -7,6 +7,7 @@ package com.example.WebApp1;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
@@ -21,9 +22,13 @@ public class HomeController {
         return "Hello, Alane!";
     }
 
-    @GetMapping("/teste")
+    @RequestMapping("/Teste")
     public @ResponseBody String greetingTeste() {
         return "Olá, novo endpoint!";
+    }
+    @RequestMapping("/Original")
+    public @ResponseBody String greetingOriginal() {
+        return "testando no projeto original!";
     }
 
 }
