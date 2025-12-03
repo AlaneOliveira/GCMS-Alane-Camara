@@ -30,5 +30,9 @@ public class HomeController {
     public @ResponseBody String greetingOriginal() {
         return "testando no projeto original!";
     }
+    @RequestMapping("/ hotfix")
+    public @ResponseBody String greetinghotfix() {
+        return "Olá Hotfix!!";
+    }
 
 }
