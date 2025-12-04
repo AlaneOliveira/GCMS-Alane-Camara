@@ -24,12 +24,13 @@ public class HomeController {
 
     @RequestMapping("/Teste")
     public @ResponseBody String greetingTeste() {
-        return "Olá, novo endpoint!";
+        return "Olá, novo teste!";
     }
     @RequestMapping("/Original")
     public @ResponseBody String greetingOriginal() {
         return "testando no projeto original!";
     }
+<<<<<<< HEAD
     @RequestMapping("/main")
     public @ResponseBody String greetingmain() {
         return "Olá, Main!!";
