@@ -30,7 +30,6 @@ public class HomeController {
     public @ResponseBody String greetingOriginal() {
         return "testando no projeto original!";
     }
-<<<<<<< HEAD
     @RequestMapping("/main")
     public @ResponseBody String greetingmain() {
         return "Olá, Main!!";
